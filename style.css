@@ -17,7 +17,7 @@ body {
 
 body:after {
     display             : block;
-    background-image    : url('background-code.svg');
+    background-image    : url('/images/background-code.svg');
     background-repeat   : no-repeat;
     background-size     : 75%;
     background-position : top center;
