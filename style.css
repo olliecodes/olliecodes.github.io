@@ -1,0 +1,101 @@
+html {
+    overflow : hidden;
+}
+
+body {
+    background      : rgb(49, 130, 206);
+    background      : linear-gradient(308deg, rgba(49, 130, 206, 1) 0%, rgba(43, 108, 176, 1) 100%);
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    font-family     : 'Montserrat', sans-serif;
+    width           : 100vw;
+    height          : 100vh;
+    color           : white;
+    flex-direction  : column;
+}
+
+body:after {
+    display             : block;
+    background-image    : url('background-code.svg');
+    background-repeat   : no-repeat;
+    background-size     : 75%;
+    background-position : top center;
+    position            : absolute;
+    top                 : 80%;
+    content             : '';
+    width               : 100%;
+    height              : 100%;
+}
+
+.container {
+    display        : flex;
+    flex-direction : row;
+}
+
+@media (max-width : 1024px) {
+    .container--primary {
+        flex-direction : column;
+        text-align     : center;
+        align-items     : center;
+        justify-content : center;
+    }
+}
+
+.container + .container {
+    margin-top : 4rem;
+}
+
+.badge {
+    max-width    : 7rem;
+    margin-right : 2rem;
+}
+
+.title {
+    font-size   : 5rem;
+    font-weight : 600;
+    margin      : 0;
+    padding     : 0;
+}
+
+.subtitle {
+    font-size   : 3rem;
+    font-weight : 500;
+    margin      : 0;
+    padding     : 0;
+}
+
+.link {
+    color           : white;
+    text-decoration : none;
+    font-size       : 3rem;
+    border-radius   : 999rem;
+    width           : 5rem;
+    height          : 5rem;
+    text-align      : center;
+    vertical-align  : center;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    box-shadow      : 0 2px 2px rgba(0, 0, 0, .2);
+}
+
+.link:hover {
+    transform : scale(1.2);
+}
+
+.link + .link {
+    margin-left : 2rem;
+}
+
+.link--youtube {
+    background-color : #ff0000;
+}
+
+.link--twitter {
+    background-color : #1da1f2;
+}
+
+.link--discord {
+    background-color : #7289da;
+}
